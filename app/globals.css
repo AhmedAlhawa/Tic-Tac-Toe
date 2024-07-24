@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.gameBoard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: solid 2px black;
+    margin: 20px;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    box-sizing: border-box;
+    display: flex; /*=> to center X or O */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cross{
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+}
+.circle{
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+}
+
+button{
+    position: absolute;
+    top:10%;
+    padding: 8px;
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: scale 0.8s;
+}
+button:active{
+    scale: 0.6;
+
+}
